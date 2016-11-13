@@ -25,5 +25,7 @@ public class BookListActivity extends AppCompatActivity {
                 .build();
 
         component.inject(this);
+
+        //test
     }
 }
