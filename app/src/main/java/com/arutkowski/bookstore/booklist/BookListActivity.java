@@ -3,9 +3,12 @@ package com.arutkowski.bookstore.booklist;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.arutkowski.bookstore.BooksApp;
 import com.arutkowski.bookstore.R;
+import com.arutkowski.bookstore.di.ActivityComponent;
 import com.arutkowski.bookstore.di.AppComponent;
 import com.arutkowski.bookstore.di.AppModule;
+import com.arutkowski.bookstore.di.DaggerActivityComponent;
 import com.arutkowski.bookstore.di.DaggerAppComponent;
 
 import javax.inject.Inject;
@@ -20,12 +23,10 @@ public class BookListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_list);
 
-        AppComponent component = DaggerAppComponent.builder()
-                .appModule(new AppModule())
+        ActivityComponent component = DaggerActivityComponent.builder()
+                .appComponent(BooksApp.get(this).getAppComponent())
                 .build();
 
         component.inject(this);
-
-        //test
     }
 }
