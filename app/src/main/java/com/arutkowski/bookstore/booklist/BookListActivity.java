@@ -1,8 +1,9 @@
-package com.arutkowski.bookstore;
+package com.arutkowski.bookstore.booklist;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.arutkowski.bookstore.R;
 import com.arutkowski.bookstore.di.AppComponent;
 import com.arutkowski.bookstore.di.AppModule;
 import com.arutkowski.bookstore.di.DaggerAppComponent;

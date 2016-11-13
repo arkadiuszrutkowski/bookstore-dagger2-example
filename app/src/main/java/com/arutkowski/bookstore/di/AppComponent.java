@@ -1,6 +1,6 @@
 package com.arutkowski.bookstore.di;
 
-import com.arutkowski.bookstore.BookListActivity;
+import com.arutkowski.bookstore.booklist.BookListActivity;
 
 import javax.inject.Singleton;
 

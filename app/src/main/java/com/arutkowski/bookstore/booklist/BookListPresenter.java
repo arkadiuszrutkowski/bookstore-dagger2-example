@@ -1,4 +1,4 @@
-package com.arutkowski.bookstore;
+package com.arutkowski.bookstore.booklist;
 
 import com.arutkowski.bookstore.async.AsyncExecutor;
 import com.arutkowski.bookstore.core.BooksService;
