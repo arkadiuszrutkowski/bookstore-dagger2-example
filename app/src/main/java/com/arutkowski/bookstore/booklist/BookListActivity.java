@@ -24,6 +24,9 @@ public class BookListActivity extends AppCompatActivity {
                 .appModule(new AppModule())
                 .build();
 
-        component.inject(this);
+        component.plusActivityComponent()
+                .inject(this);
+
+        presenter.hashCode();
     }
 }

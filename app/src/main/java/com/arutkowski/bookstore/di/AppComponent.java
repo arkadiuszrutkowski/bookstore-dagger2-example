@@ -1,7 +1,5 @@
 package com.arutkowski.bookstore.di;
 
-import com.arutkowski.bookstore.booklist.BookListActivity;
-
 import javax.inject.Singleton;
 
 import dagger.Component;
@@ -10,5 +8,5 @@ import dagger.Component;
 @Component(modules = AppModule.class)
 public interface AppComponent {
 
-    void inject(BookListActivity activity);
+    ActivityComponent plusActivityComponent();
 }
